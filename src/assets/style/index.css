@@ -1,0 +1,57 @@
+/*
+    此文件为全局样式，作用于网站所有页面及组件
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-wraper{
+    height: 100%;
+    color: #fff;
+}
+
+.common-bg{
+    background:url(../images/common-bg.jpg) no-repeat top center;
+    background-size:100% 100%;
+}
+.bg-type01{
+    position:relative;
+}
+.bg-type01:after{
+    content:"";
+    width:100%;
+    height:3px;
+    position:absolute;
+    top:0;
+    background:url(../images/section-bg-type01.png) no-repeat center center;
+    background-size:100% auto;
+}
+.bg-type01:before{
+    content:"";
+    width:100%;
+    height:3px;
+    position:absolute;
+    bottom:0;
+    background:url(../images/section-bg-type01.png) no-repeat center center;
+    background-size:100% auto;
+}
+
+.section-title{
+    height:32px;
+    background:url(../images/common-title-bg.png) no-repeat top center;
+    background-size:100% 100%;
+    border:none;
+    text-align:center;
+    line-height:32px;
+}
+.section-title span{
+    color:#88d7fd;
+    float:initial;
+    font-size:16px;
+}
